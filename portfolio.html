@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work — Poor Yorick</title>
+    <meta name="description" content="Case studies in healthcare UX, clinical decision support, enterprise analytics, data visualization, and AI integration. Twenty years of complex product work. Poor Yorick.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Federo&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kings&family=Lavishly+Yours&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.gif">
+</head>
+<body class="service-page-v2">
+
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">Poor Yorick</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html" class="active">Work</a></li>
+                <li><a href="consulting.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <!--<li><a href="blog.html">Blog</a></li>-->
+                <li><a href="about.html">About</a></li>
+                <li><a href="mailto:stevelibbey@gmail.com" aria-label="Email" class="email-icon">&#9993;</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- ══ Hero ══ -->
+    <section class="service-hero" style="background: var(--bg-services);">
+        <div class="service-hero__inner">
+            <div class="service-hero__copy">
+                <h1 class="service-hero__title">Our Work</h1>
+                <p class="service-hero__tagline">These projects were led by our principals. The work spans healthcare platforms, clinical decision-support systems, enterprise analytics tools, data visualization interfaces, AI integration, and complex workflow products. Two decades of building things that have to work.</p>
+                <p class="service-hero__for">Work shown here reflects the experience of Poor Yorick's founding team, completed prior to or alongside the formation of Poor Yorick.</p>
+            </div>
+            <div class="service-hero__media">
+                <img src="assets/img/artifact5.png" alt="Portfolio illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ Tab nav ══ -->
+    <section class="portfolio-tabs-section">
+        <div class="content-wide">
+            <div class="divider-blocks" aria-hidden="true">
+                <span></span><span></span><span></span>
+            </div>
+            <nav class="services-tab-nav portfolio-tab-nav" aria-label="Case studies">
+                <button class="stab active" data-tab="west-health">West Health</button>
+                <button class="stab" data-tab="pedi-crisis">Pedi Crisis</button>
+                <button class="stab" data-tab="providence">Providence</button>
+                <button class="stab" data-tab="tmo-sales">T-Mobile Analytics</button>
+                <button class="stab" data-tab="tmo-coaching">T-Mobile Coaching</button>
+                <button class="stab" data-tab="noaa">NOAA</button>
+                <button class="stab" data-tab="norad">NORAD</button>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ══ Case study panels ══ -->
+    <section class="portfolio-panels-section">
+        <div class="content-wide">
+
+            <!-- West Health -->
+            <div id="west-health" class="portfolio-panel active">
+                <img src="assets/img/seniors-are-sickest.png" alt="Seniors Are Sickest infographic showing chronic condition burden by body system across age cohorts" class="case-study-image" onclick="openModal(this)">
+                <article class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-meta">
+                            <span class="meta-tag">Policy and Stakeholder Communications</span>
+                            <span class="meta-tag">Healthcare Data Visualization</span>
+                            <span class="meta-tag">Data Storytelling</span>
+                            <span class="meta-tag">2024&ndash;2025</span>
+                        </div>
+                        <h3>West Health Institute &mdash; Healthcare Affordability Research</h3>
+                        <p class="case-study-intro">Senior UX Designer role translating dense healthcare policy research into communication tools for lawmakers, researchers, and students. Built on the West Health-Gallup Survey on Aging in America, a nationally representative study of more than 5,000 U.S. adults.</p>
+                    </div>
+                    <div class="case-study-body">
+                        <div class="outcomes">
+                            <div class="outcome">
+                                <div class="outcome-label">Collaborators</div>
+                                <div class="outcome-value">West Health + Gallup</div>
+                                <div class="outcome-description">Research and editorial alignment</div>
+                            </div>
+                            <div class="outcome">
+                                <div class="outcome-label">Stack</div>
+                                <div class="outcome-value">Figma, React, D3.js</div>
+                                <div class="outcome-description">Recharts, Next.js, Storyblok CMS</div>
+                            </div>
+                            <div class="outcome">
+                                <div class="outcome-label">Team</div>
+                                <div class="outcome-value">Distributed</div>
+                                <div class="outcome-description">Offshore developers across time zones</div>
+                            </div>
+                        </div>
+                        <div class="challenge-section">
+                            <h4>The Challenge</h4>
+                            <p>The data was rigorous and the stakes were real. Over 80% of older adults live with at least one chronic condition. An estimated 72 million Americans skipped needed care in a single three-month window because they could not afford it. By 2030, seniors will make up 20% of the U.S. population. The research said all of this clearly. The problem was making it land for audiences who do not read 36-page policy reports.</p>
+
+                            <h4>What We Designed</h4>
+                            <p>A suite of communication interfaces and data storytelling products that translated survey findings into tools people could actually read, absorb, and use. That meant decisions about hierarchy, visual weight, narrative entry points, and what to cut. The Seniors Are Sickest infographic organizes chronic condition burden by body system and age cohort, giving readers a spatial way into data that would otherwise require deep reading. Color does categorical work. The body silhouette grounds the statistics in something human. The layout lets readers navigate at their own pace rather than following a forced sequence.</p>
+
+                            <h4>Key Design Decisions</h4>
+                            <ul>
+                                <li>Led end-to-end UX and front-end development across the full publication pipeline, from research output to finished web products</li>
+                                <li>Translated survey findings into visual hierarchies that served both general audiences and policy-focused readers without dumbing down the data</li>
+                                <li>Used progressive disclosure to let the data breathe without hiding the complexity underneath</li>
+                                <li>Coordinated across research, editorial, and product stakeholders at West Health and Gallup to keep outputs aligned with policy goals and editorial standards</li>
+                                <li>Integrated AI tools across data exploration, content workflows, and rapid iteration cycles to accelerate delivery without sacrificing accuracy</li>
+                            </ul>
+
+                            <h4>Design Principle</h4>
+                            <p>The numbers already tell the story. The designer's job is to make sure the reader does not have to work to find it.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pedi Crisis -->
+            <div id="pedi-crisis" class="portfolio-panel">
+                <img src="assets/img/SteveLibbey-Portfolio-PEDI.png" alt="Pedi Crisis pediatric emergency decision support application showing crisis event selection screen" class="case-study-image" onclick="openModal(this)">
+                <article class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-meta">
+                            <span class="meta-tag">Healthcare</span>
+                            <span class="meta-tag">Clinical Decision Support</span>
+                            <span class="meta-tag">Human Factors</span>
+                            <span class="meta-tag">Cross-Platform UX</span>
+                            <span class="meta-tag">2012&ndash;2013</span>
+                        </div>
+                        <h3>Pediatric Crisis Decision Support System &mdash; Pedi Crisis</h3>
+                        <p class="case-study-intro">In collaboration with Children's Hospital of Philadelphia and the Society for Pediatric Anesthesiologists, we designed a mobile cognitive aid for pediatric anesthesia emergencies, translating clinical crisis protocols into interactive treatment algorithms for iOS and Windows 8 tablets.</p>
+                    </div>
+                    <div class="case-study-body">
+                        <div class="outcomes">
+                            <div class="outcome">
+                                <div class="outcome-label">Platforms</div>
+                                <div class="outcome-value">iOS + Windows 8</div>
+                                <div class="outcome-description">Cross-platform clinical deployment</div>
+                            </div>
+                            <div class="outcome">
+                                <div class="outcome-label">Use Case</div>
+                                <div class="outcome-value">OR emergencies</div>
+                                <div class="outcome-description">Decision support under stress</div>
+                            </div>
+                            <div class="outcome">
+                                <div class="outcome-label">Core Function</div>
+                                <div class="outcome-value">Interactive algorithms</div>
+                                <div class="outcome-description">Weight-based dosing and treatment guidance</div>
+                            </div>
+                        </div>
+                        <div class="challenge-section">
+                            <h4>The Challenge</h4>
+                            <p>Operating room emergencies are rare, fast-moving, and high stakes. In pediatric anesthesia, clinicians must diagnose, treat, and coordinate as a team while managing weight-based dosing and rapidly changing conditions. Printed references were too slow, and even experienced providers miss steps when cognitive load spikes. The question was how to get the right information in front of the right person at the right moment without adding friction to an already pressured environment.</p>
+
+                            <h4>What We Designed</h4>
+                            <p>A system that guided clinicians through a repeatable emergency workflow: select the crisis event, enter patient weight, confirm recognition criteria, follow staged treatment steps, review medication dosing, and arrive at a shared end-of-algorithm review. The structure supported rare but life-threatening pediatric events including anaphylaxis, bradycardia, hyperkalemia, airway fire, hypoxia, transfusion reactions, and cardiac arrest.</p>
+                            <p>The design problem was not making it look clean. It was making sure clinicians could navigate it correctly under stress, on a tablet, while coordinating with a team. Every structural decision was made with that context in mind.</p>
+
+                            <h4>Key Design Decisions</h4>
+                            <ul>
+                                <li>Translated paper crisis protocols into interactive algorithm flows clinicians could follow in real time without having to interpret or remember</li>
+                                <li>Structured each event around the same repeatable pattern: event selection, recognition, treatment, dosing, escalation, and resolution</li>
+                                <li>Designed weight capture as a persistent system input so medication guidance stayed accurate throughout the workflow without requiring re-entry</li>
+                                <li>Used checklist interactions and progressive disclosure to reduce cognitive overload without hiding information clinicians needed</li>
+                                <li>Maintained the same clinical workflow across iOS and Windows 8 while adapting to each platform's interaction model</li>
+                            </ul>
+
+                            <h4>How the System Worked</h4>
+                            <ul>
+                                <li>Converted paper checklists and treatment pathways into interactive Yes/No treatment flows</li>
+                                <li>Kept patient weight visible and editable throughout so dosing stayed accurate as conditions changed</li>
+                                <li>Added a crisis timer to track elapsed time once an algorithm began</li>
+                                <li>Created cross-links between related algorithms for escalation and differential diagnosis</li>
+                                <li>Standardized a shared end-state screen prompting team review, therapy options, ICU transfer decisions, consults, and procedure cancellation</li>
+                                <li>Included action logs, settings, hotline information, and support features for real-world clinical use</li>
+                            </ul>
+
+                            <h4>Cross-Platform Design</h4>
+                            <p>iOS and Windows 8 required different UI conventions, but the clinical workflow had to remain consistent. We adapted the interface to each platform while preserving the same underlying algorithm structure, navigation logic, and treatment sequence. Clinicians could rely on the same mental model regardless of which device was available.</p>
+
+                            <h4>Process and Collaboration</h4>
+                            <p>Algorithms were revised through ongoing collaboration with clinical stakeholders to improve symptom ordering, simplify navigation, standardize medication units, merge related pathways, and clarify escalation logic. That collaboration shaped not just the screens but the decision model itself.</p>
+
+                            <h4>Design Principle</h4>
+                            <p>Do not ask clinicians to remember the protocol. Put the protocol in the interface, keep it structured, and make the next step obvious.</p>
+                        </div>
+                        <div class="case-study-artifact">
+                            <img src="assets/img/Screen5.jpg" alt="Pedi Crisis treatment workflow detail showing interactive algorithm steps" onclick="openModal(this)" style="cursor:pointer;">
+                        </div>
+                        <div class="case-study-artifact">
+                            <img src="assets/img/Screen9.jpg" alt="Pedi Crisis algorithm checklist and dosing detail" onclick="openModal(this)" style="cursor:pointer;">
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Providence -->
+            <div id="providence" class="portfolio-panel">
+                <img src="assets/img/providence.png" alt="Providence Health System clinical desktop unification project" class="case-study-image" onclick="openModal(this)">
+                <article class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-meta">
+                            <span class="meta-tag">Healthcare</span>
+                            <span class="meta-tag">Enterprise Workflow</span>
+                            <span class="meta-tag">Constraint Navigation</span>
+                            <span class="meta-tag">2021&ndash;2022</span>
+                        </div>
+                        <h3>Providence Clinical Desktop Unification</h3>
+                        <p class="case-study-intro">At Providence Health System, one of the largest nonprofit health systems in the country, we originated and led a project to reduce the workflow fragmentation that came with decades of hospital acquisitions. The goal was a unified clinical desktop that let administrators and providers manage requests across multiple systems without leaving a single interface.</p>
+                    </div>
+                    <div class="case-study-body">
+                        <div class="outcomes">
+                            <div class="outcome">
+                                <div class="outcome-label">Environment</div>
+                                <div class="outcome-value">Citrix secured desktop</div>
+                                <div class="outcome-description">Security-perimeter constrained</div>
+                            </div>
+                            <div class="outcome">
+                                <div class="outcome-label">Users</div>
+                                <div class="outcome-value">Admins &amp; providers</div>
+                                <div class="outcome-description">Administrators and clinical providers</div>
+                            </div>
+                            <div class="outcome">
+                                <div class="outcome-label">Problem</div>
+                                <div class="outcome-value">Fragmented workflows</div>
+                                <div class="outcome-description">Multi-app switching across acquired hospital systems</div>
+                            </div>
+                        </div>
+                        <div class="challenge-section">
+                            <h4>The Challenge</h4>
+                            <p>Providence absorbed over 100 cyberattacks daily. That threat level required keeping the entire clinical desktop inside a Citrix security perimeter. It was the right call. But it meant that Epic, ServiceNow, and a patchwork of other systems inherited from acquired hospitals all lived as separate applications inside a walled garden with no shared layer connecting them.</p>
+                            <p>Administrators bore the heaviest cost. Approving or denying routine requests&mdash;a new computer for cardiology, a schedule change, a supply order&mdash;meant navigating between multiple applications for tasks that should take seconds. Providers had the same problem. Everyone interviewed said the same thing: they wanted one place to handle this, and the constant switching was eating their time.</p>
+
+                            <h4>The Approach</h4>
+                            <p>The director who originated the initiative had prior experience at Citrix and identified a widget feature that could serve as an aggregation layer inside the secured desktop. The idea was to surface consolidated request workflows from Epic, ServiceNow, and other systems inside a single Citrix dashboard, available on login, without requiring users to launch separate applications.</p>
+                            <p>I hired and led the development team, conducted discovery interviews with administrators and providers, and designed the workflow model. Our first test case was administrator request approvals: one interface, one click per request, no app switching.</p>
+
+                            <h4>Where It Broke Down</h4>
+                            <p>Two constraints converged and closed off the path.</p>
+                            <p>The only sanctioned build tool for the Citrix widget was a low-code environment that couldn't support what we were designing. The workaround was to surface a web application inside the widget space, but that created security vulnerabilities the Citrix perimeter existed to prevent. We couldn't use the sanctioned tool and we couldn't safely use the workaround.</p>
+                            <p>While we were working through this, Citrix engineers began signaling informally that the widget feature itself was not long for the platform. Shortly after, it was sunsetted entirely. The one mechanism that could aggregate inside the security boundary was gone.</p>
+
+                            <h4>What We Proposed Instead</h4>
+                            <p>We came back to leadership with an alternative. A standalone web application dashboard with broader scope, designed to span not just the original use cases but the full patchwork of systems across every hospital Providence had acquired. It was technically stronger and more scalable than the original widget approach.</p>
+                            <p>But it couldn't meet the one non-negotiable requirement: available on login, inside the perimeter, without adding another application to the stack. Leadership made the right call and shut the project down. The team was reassigned.</p>
+
+                            <h4>What This Shows</h4>
+                            <p>The problem was real and validated. The approach was sound given the constraints available at the time. The technical path was closed by an external vendor decision, not a design failure. When it closed, we identified an alternative that would have worked in a different environment and were honest about what it couldn't do.</p>
+                            <p>Designing inside a hostile constraint environment, where every integration decision carries a security implication and the vendor landscape can shift under you, is a different discipline than designing for a clean greenfield product. This project was that discipline.</p>
+
+                            <h4>Design Principle</h4>
+                            <p>Know which constraints are load-bearing before you build against them. When the foundation changes, stop, assess what's still possible, and say clearly what isn't.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- T-Mobile Sales -->
+            <div id="tmo-sales" class="portfolio-panel">
+                <img src="assets/img/SteveLibbey-Portfolio-tmosort.jpg" alt="T-Mobile internal sales analytics business intelligence platform" class="case-study-image" onclick="openModal(this)">
+                <article class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-meta">
+                            <span class="meta-tag">Business Intelligence</span>
+                            <span class="meta-tag">Enterprise Analytics</span>
+                            <span class="meta-tag">Internal Tools</span>
+                            <span class="meta-tag">2016&ndash;2020</span>
+                        </div>
+                        <h3>T-Mobile Internal Sales Analytics Platform</h3>
+                        <p class="case-study-intro">Senior UX Software Engineer role designing and building an Angular-based business intelligence platform used by thousands of management and executive users for data-driven decision making across T-Mobile's sales organization.</p>
+                    </div>
+                    <div class="case-study-body">
+                        <div class="outcomes">
+                            <div class="outcome">
+                                <div class="outcome-label">Scale</div>
+                                <div class="outcome-value">1000s of users</div>
+                                <div class="outcome-description">Management &amp; executive level</div>
+                            </div>
+                            <div class="outcome">
+                                <div class="outcome-label">Innovation</div>
+                                <div class="outcome-value">First Agile team</div>
+                                <div class="outcome-description">Template for entire department</div>
+                            </div>
+                            <div class="outcome">
+                                <div class="outcome-label">Lifespan</div>
+                                <div class="outcome-value">4 years</div>
+                                <div class="outcome-description">Active production use</div>
+                            </div>
+                        </div>
+                        <div class="challenge-section">
+                            <h4>The Challenge</h4>
+                            <p>T-Mobile leadership needed a scalable business intelligence platform that could serve current reporting requirements while remaining adaptable to future data structures they could not yet fully specify. Multiple access levels required different views of the same underlying data without creating a maintenance burden as the organization's needs evolved.</p>
+
+                            <h4>Key Design Decisions</h4>
+                            <ul>
+                                <li>Determined user needs across all access levels through stakeholder interviews with leadership before any design work began</li>
+                                <li>Designed a UI architecture flexible enough to accommodate both current and anticipated data structures</li>
+                                <li>Implemented MVC architecture using Angular for clean separation of concerns and long-term maintainability</li>
+                                <li>Built the platform as a reusable foundation for future internal applications, not just the immediate use case</li>
+                                <li>Led the first team in the department to adopt Agile Scrum methodology, which became the standard across the organization</li>
+                            </ul>
+
+                            <h4>What Made It Last</h4>
+                            <p>The platform ran in active production for four years. That longevity came from design decisions made early: an architecture that could absorb changing requirements, a UI that gave different user levels what they needed without constant customization, and a codebase that other teams could build on. The pattern was reused for subsequent internal tools.</p>
+                        </div>
+                        <div class="case-study-artifact">
+                            <img src="assets/img/artifact1.png" alt="T-Mobile sales platform design artifact">
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- T-Mobile Coaching -->
+            <div id="tmo-coaching" class="portfolio-panel">
+                <img src="assets/img/SteveLibbey-Portfolio-tmoshout.jpg" alt="T-Mobile call center performance and coaching platform" class="case-study-image" onclick="openModal(this)">
+                <article class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-meta">
+                            <span class="meta-tag">Performance Analytics</span>
+                            <span class="meta-tag">Employee Tools</span>
+                            <span class="meta-tag">Data Visualization</span>
+                            <span class="meta-tag">2017</span>
+                        </div>
+                        <h3>Call Center Performance &amp; Coaching Platform</h3>
+                        <p class="case-study-intro">Redesigned the application call center staff used to track progress and predict monthly bonuses, combining data visualization with T-Mobile's energetic culture.</p>
+                    </div>
+                    <div class="case-study-body">
+                        <div class="outcomes">
+                            <div class="outcome">
+                                <div class="outcome-label">User Impact</div>
+                                <div class="outcome-value">Self-service</div>
+                                <div class="outcome-description">Employees predict bonus eligibility</div>
+                            </div>
+                            <div class="outcome">
+                                <div class="outcome-label">Management View</div>
+                                <div class="outcome-value">Aggregated stats</div>
+                                <div class="outcome-description">By location and team</div>
+                            </div>
+                        </div>
+                        <div class="challenge-section">
+                            <h4>The Challenge</h4>
+                            <p>Care team needed a redesign that maintained T-Mobile's fun, enthusiastic culture while giving employees clear visibility into bonus calculations. Management needed aggregated statistics organized by location. The challenge: make complex performance metrics feel approachable and motivating.</p>
+
+                            <h4>Key Design Decisions</h4>
+                            <ul>
+                                <li>Worked with Java developer to realize dynamic tile function possibilities (interactive gauges, real-time updates)</li>
+                                <li>Designed predictive interface allowing employees to model "what if" scenarios for bonus optimization</li>
+                                <li>Created enthusiasm-driven UI matching call center culture without sacrificing data clarity</li>
+                                <li>Built hierarchical views: individual performance → team → location aggregations</li>
+                            </ul>
+
+                            <h4>Design Philosophy</h4>
+                            <p>Turned dry performance metrics into an engaging, game-like experience. The UI celebrated achievements while providing actionable insights for improvement&mdash;reflecting T-Mobile's unique approach to employee motivation.</p>
+                        </div>
+                        <div class="case-study-artifact">
+                            <img src="assets/img/artifact1.png" alt="Call center performance platform design artifact">
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- NOAA -->
+            <div id="noaa" class="portfolio-panel">
+                <img src="assets/img/SteveLibbey-Portfolio-noaa1.jpg" alt="NOAA Pacific Coastal Salmon Recovery Fund data tracking system" class="case-study-image" onclick="openModal(this)">
+                <article class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-meta">
+                            <span class="meta-tag">Government / Conservation</span>
+                            <span class="meta-tag">Data Systems</span>
+                            <span class="meta-tag">Data Visualization</span>
+                            <span class="meta-tag">2012</span>
+                        </div>
+                        <h3>NOAA Pacific Coastal Salmon Recovery Fund Tracker</h3>
+                        <p class="case-study-intro">Government conservation project tracking system connecting scientists, policymakers, and students through multi-level data access and visualization.</p>
+                    </div>
+                    <div class="case-study-body">
+                        <div class="outcomes">
+                            <div class="outcome">
+                                <div class="outcome-label">Audience</div>
+                                <div class="outcome-value">Multi-level</div>
+                                <div class="outcome-description">Scientists to students</div>
+                            </div>
+                            <div class="outcome">
+                                <div class="outcome-label">Data Handling</div>
+                                <div class="outcome-value">Oracle APEX</div>
+                                <div class="outcome-description">Complex scientific datasets</div>
+                            </div>
+                        </div>
+                        <div class="challenge-section">
+                            <h4>The Challenge</h4>
+                            <p>Tracking information for salmon recovery projects required serving vastly different user needs: scientists wanting raw data tables, policymakers needing summaries, and students requiring educational context. Database queries returned massive tables of scientific data that needed progressive disclosure.</p>
+
+                            <h4>Key Design Decisions</h4>
+                            <ul>
+                                <li>Designed familiar webpage interface with intuitive navigation</li>
+                                <li>Built progressive disclosure: summaries in graphics/charts for general users, full scientific data access on demand</li>
+                                <li>Integrated with Oracle database using APEX (HTML/CSS front-end)</li>
+                                <li>Created visualization layer that made complex conservation metrics accessible to non-scientists</li>
+                                <li>Also designed commercial fisherman trading app with regulatory compliance built-in</li>
+                            </ul>
+
+                            <h4>Design Principle</h4>
+                            <p>Don't hide the complexity&mdash;layer it. Scientists got their tables, students got their charts, everyone got value from the same underlying data.</p>
+                        </div>
+                        <div class="case-study-artifact">
+                            <img src="assets/img/artifact1.png" alt="NOAA salmon recovery tracking system artifact">
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- NORAD -->
+            <div id="norad" class="portfolio-panel">
+                <img src="assets/img/SteveLibbey-Portfolio-norad1.jpg" alt="NORAD Tracks Santa responsive holiday website" class="case-study-image" onclick="openModal(this)">
+                <article class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-meta">
+                            <span class="meta-tag">High-Traffic</span>
+                            <span class="meta-tag">Responsive Design</span>
+                            <span class="meta-tag">Performance</span>
+                            <span class="meta-tag">2013&ndash;2014</span>
+                        </div>
+                        <h3>NORAD Tracks Santa</h3>
+                        <p class="case-study-intro">Rebuilt holiday multimedia site from scratch after predecessor's indecipherable code caused production bugs. Millions of global users on Christmas Eve.</p>
+                    </div>
+                    <div class="case-study-body">
+                        <div class="outcomes">
+                            <div class="outcome">
+                                <div class="outcome-label">Performance</div>
+                                <div class="outcome-value">Bug-free launch</div>
+                                <div class="outcome-description">After previous year's failures</div>
+                            </div>
+                            <div class="outcome">
+                                <div class="outcome-label">Code Quality</div>
+                                <div class="outcome-value">Reusable codebase</div>
+                                <div class="outcome-description">Used for future versions</div>
+                            </div>
+                        </div>
+                        <div class="challenge-section">
+                            <h4>The Challenge</h4>
+                            <p>2013 site launched with bugs due to deliberately obfuscated JavaScript. Lead programmer was fired, leaving company scrambling for 2014 deployment. Brought in late in the game to rebuild entire site with weeks to deadline.</p>
+
+                            <h4>Key Design Decisions</h4>
+                            <ul>
+                                <li>Threw out previous year's code completely</li>
+                                <li>Rebuilt from scratch using Bootstrap, jQuery, and Greensock JS for animations</li>
+                                <li>Optimized for performance under massive traffic spikes</li>
+                                <li>Built fully responsive (kids use whatever device they can access)</li>
+                                <li>Created maintainable codebase using well-supported libraries</li>
+                            </ul>
+
+                            <h4>What I Said No To</h4>
+                            <p>Clever code. No custom animation engines, no framework reinvention, no showing off. Used battle-tested libraries and clear documentation so the next person could actually maintain it.</p>
+
+                            <h4>Fun Fact</h4>
+                            <p>When NPR ran the headline "NORAD Tracks Santa Begins with a Typo" for the 2014 launch, I nearly had a heart attack before realizing they meant the 1953 origin story.</p>
+                        </div>
+                        <div class="case-study-artifact">
+                            <img src="assets/img/artifact1.png" alt="NORAD Tracks Santa design artifact">
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══ Footer ══ -->
+    <footer id="contact"><div class="footer-content"><p class="footer-copy">&copy; 2026 Poor Yorick. <a href="mailto:hello@yorickapp.com" class="contact-link">Get in touch.</a></p></div></footer>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal" onclick="closeModal()">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "metric": "human_involvement_matters",
+    "value": 92,
+    "unit": "percent",
+    "label": "Readers who say human involvement in writing and producing books matters",
+    "year": 2024,
+    "sourceLabel": "Wakefield Research for Wattpad"
+  },
+  {
+    "metric": "want_disclosure_before_reading",
+    "value": 56,
+    "unit": "percent",
+    "label": "Readers who want AI disclosure before reading a book",
+    "year": 2025,
+    "sourceLabel": "YouGov for Black Château"
+  },
+  {
+    "metric": "less_fulfilled_post_discovery",
+    "value": 61,
+    "unit": "percent",
+    "label": "Readers who feel less fulfilled if they later learn a book was AI-written",
+    "year": 2025,
+    "sourceLabel": "YouGov for Black Château"
+  }
+]

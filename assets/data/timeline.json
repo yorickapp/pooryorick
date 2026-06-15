@@ -1,0 +1,56 @@
+[
+  {
+    "year": 2024,
+    "metric": "ai_adoption_us_working_age",
+    "value": 39.6,
+    "unit": "percent",
+    "label": "Working-age Americans using generative AI",
+    "sourceType": "direct",
+    "sourceLabel": "Brookings / Real-Time Population Survey"
+  },
+  {
+    "year": 2025,
+    "metric": "ai_adoption_us_adults",
+    "value": 56,
+    "unit": "percent",
+    "label": "American adults using AI tools",
+    "sourceType": "direct",
+    "sourceLabel": "Brookings / YouGov"
+  },
+  {
+    "year": 2024,
+    "metric": "ai_use_at_work",
+    "value": 16,
+    "unit": "percent",
+    "label": "U.S. workers using AI at work",
+    "sourceType": "direct",
+    "sourceLabel": "Pew Research"
+  },
+  {
+    "year": 2025,
+    "metric": "ai_use_at_work",
+    "value": 21,
+    "unit": "percent",
+    "label": "U.S. workers using AI at work",
+    "sourceType": "direct",
+    "sourceLabel": "Pew Research"
+  },
+  {
+    "year": 2021,
+    "metric": "more_concerned_than_excited",
+    "value": 37,
+    "unit": "percent",
+    "label": "Americans more concerned than excited about AI",
+    "sourceType": "direct",
+    "sourceLabel": "Pew Research"
+  },
+  {
+    "year": 2025,
+    "metric": "more_concerned_than_excited",
+    "value": 50,
+    "unit": "percent",
+    "label": "Americans more concerned than excited about AI",
+    "sourceType": "direct",
+    "sourceLabel": "Pew Research"
+  }
+]

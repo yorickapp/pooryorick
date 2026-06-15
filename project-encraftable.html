@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encraftable | Poor Yorick</title>
+    <meta name="description" content="Encraftable — makerspace organizational memory. A React Native iOS prototype for Noisegiftland. Designed by Poor Yorick.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Federo&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kings&family=Lavishly+Yours&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.gif">
+</head>
+<body class="service-page-v2">
+
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">Poor Yorick</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Work</a></li>
+                <li><a href="consulting.html">Services</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <!--<li><a href="blog.html">Blog</a></li>-->
+                <li><a href="about.html">About</a></li>
+                <li><a href="mailto:stevelibbey@gmail.com" aria-label="Email" class="email-icon">&#9993;</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- ══ Hero ══ -->
+    <section class="service-hero" style="background: #1e3a3a;">
+        <div class="service-hero__inner">
+            <div class="service-hero__copy">
+                <a href="projects.html" class="service-hero__back">← Projects</a>
+                <div class="case-study-meta" style="margin-bottom: 1rem;">
+                    <span class="meta-tag">React Native</span>
+                    <span class="meta-tag">Design Systems</span>
+                    <span class="meta-tag">Community Tools</span>
+                    <span class="meta-tag">2025</span>
+                </div>
+                <h1 class="service-hero__title">Encraftable</h1>
+                <p class="service-hero__tagline">A React Native iOS prototype for makerspace organizational memory — stations, gear, cables, and instructions, so the room works for everyone who walks in, not just the people who already know where everything is.</p>
+                <p class="service-hero__for">Platform: iOS (React Native) · Stack: Expo / TypeScript / Expo Router</p>
+            </div>
+            <div class="service-hero__media">
+                <img src="assets/img/encraftable-screen-home.jpg" alt="Encraftable home screen">
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ The Challenge ══ -->
+    <section class="service-section">
+        <div class="content-medium">
+            <div class="divider-blocks" aria-hidden="true">
+                <span></span><span></span><span></span>
+            </div>
+            <span class="service-section__label">Overview</span>
+            <h2>The Challenge</h2>
+            <p>Makerspaces run on volunteer stewardship. Equipment gets donated, set up by someone who knows how it works, and maintained by whoever cares enough to show up. When that person moves on — and they always do — what they knew goes with them. The result is a room full of gear that technically works but practically doesn't, because nobody knows the power sequence for the organ, which cable goes where, or who to ask when the mixing board stops responding.</p>
+            <p>Inventory software doesn't solve this. A list of items with condition fields tells you what's there. It doesn't tell you whether the station is actually playable right now, what the setup sequence is for a first-timer, or why there's a note taped to the bass amp that says "don't touch the red knob." The real problem is organizational memory.</p>
+        </div>
+    </section>
+
+    <hr class="divider-line">
+
+    <!-- ══ What we designed ══ -->
+    <section class="service-section">
+        <div class="content-medium">
+            <span class="service-section__label">Design</span>
+            <h2>What we designed</h2>
+            <p>A mobile app that treats the station — not the individual item — as the primary unit of information. A station is a fully configured playing position: Guitar Station 1, Hammond Station, Recording Station. The question the app answers is not "what gear is in this room" but "can I actually use this station right now, and how do I do it."</p>
+            <ul class="two-column-list">
+                <li>A readiness status — Ready, Needs Attention, or Down — with a plain-language explanation</li>
+                <li>A complete gear list with condition and status for each item</li>
+                <li>A cable diagram showing every assigned cable by type, length, label, and condition</li>
+                <li>A prose instruction sheet written for someone who has never touched the equipment</li>
+                <li>A quirks field for accumulated lore that doesn't fit formal documentation</li>
+                <li>Room hours, recurring events, steward contacts with areas of expertise</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="divider-signal" aria-hidden="true"></div>
+
+    <!-- ══ Screen gallery ══ -->
+    <section class="service-section">
+        <div class="content-wide">
+            <div class="content-medium" style="padding: 0;">
+                <span class="service-section__label">Screens</span>
+                <h2>The interface</h2>
+            </div>
+            <div class="screen-gallery reveal">
+                <figure>
+                    <img src="assets/img/encraftable-screen-home.jpg" alt="Home screen showing room readiness, today's hours, and upcoming events">
+                    <figcaption>Home</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/encraftable-screen-stations.jpg" alt="Stations list showing readiness status for each playing position">
+                    <figcaption>Stations</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/encraftable-screen-cables.jpg" alt="Cable inventory organized by station assignment">
+                    <figcaption>Cables</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/encraftable-screen-issues.jpg" alt="Issues screen listing open and in-progress problems">
+                    <figcaption>Issues</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/encraftable-screen-routines.jpg" alt="Routines screen capturing how things are actually done">
+                    <figcaption>Routines</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/encraftable-screen-hours.jpg" alt="Hours and events screen with room schedule">
+                    <figcaption>Hours &amp; Events</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/encraftable-screen-search.jpg" alt="Search screen showing XLR cable results">
+                    <figcaption>Search</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/encraftable-screen-people.jpg" alt="People screen with member presence and roles">
+                    <figcaption>People</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img/encraftable-screen-guide.jpg" alt="Guide screen with welcome text and space orientation">
+                    <figcaption>Guide</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider-line">
+
+    <!-- ══ Key decisions ══ -->
+    <section class="service-section">
+        <div class="content-medium">
+            <span class="service-section__label">Decisions</span>
+            <h2>Key design decisions</h2>
+            <div class="engagement">
+                <p class="engagement__situation">Station as the primary unit, not the item</p>
+                <p class="engagement__response">The instinct in inventory software is to start with the item. We started with the station because that's the unit that matters to the person walking in. A guitarist doesn't care that there's an Ibanez acoustic and a Fender combo amp in the room. They care whether Guitar Station 1 is set up and ready to play. Readiness lives at the station level. Gear and cables are supporting evidence.</p>
+            </div>
+            <div class="engagement" style="margin-top: 1.5rem;">
+                <p class="engagement__situation">Cables as first-class objects</p>
+                <p class="engagement__response">Cables are the most common reason a station fails to work. They break, they disappear, they get borrowed and not returned, and nobody notices until someone sits down to play and nothing happens. Making cables a first-class entity — with their own records, conditions, assignments, and a labeled spare bin — turns a chronic invisible problem into a visible, manageable one.</p>
+            </div>
+            <div class="engagement" style="margin-top: 1.5rem;">
+                <p class="engagement__situation">Honest about partial truth</p>
+                <p class="engagement__response">The app does not normalize incomplete data into false completeness. Bass Station has no bass guitar assigned — the app says so plainly. The turntable signal chain is unverified — the app says that too. Empty states are honest. The room is a work in progress and the app reflects that, because pretending otherwise makes the app useless the moment someone relies on it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ Footer ══ -->
+    <footer id="contact"><div class="footer-content"><p class="footer-copy">&copy; 2026 Poor Yorick. <a href="mailto:hello@yorickapp.com" class="contact-link">Get in touch.</a></p></div></footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

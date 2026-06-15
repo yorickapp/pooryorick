@@ -1,0 +1,29 @@
+[
+  {
+    "domain": "News",
+    "finding": "AI label lowers perceived trustworthiness",
+    "trust": -1,
+    "engagement": 0,
+    "futureIntent": 0,
+    "note": "Even when accuracy and fairness ratings stayed flat",
+    "sourceLabel": "Political Communication / Sage, 2024"
+  },
+  {
+    "domain": "News",
+    "finding": "Disclosure raises short-term willingness to continue reading",
+    "trust": 0,
+    "engagement": 1,
+    "futureIntent": -1,
+    "note": "Short-term engagement tick-up but no improvement in future willingness to read AI news",
+    "sourceLabel": "Gilardi et al. preregistered study, 2024"
+  },
+  {
+    "domain": "Books",
+    "finding": "Post-hoc discovery of AI authorship reduces fulfillment",
+    "trust": -1,
+    "engagement": 0,
+    "futureIntent": -1,
+    "note": "61% feel less fulfilled. Distinct from pre-read disclosure.",
+    "sourceLabel": "YouGov for Black Château, 2025"
+  }
+]
