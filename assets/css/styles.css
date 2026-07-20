@@ -519,6 +519,34 @@ header.hero {
         right: 1.5rem;
         max-width: none;
     }
+
+    .hero-headline {
+        font-size: 1.9rem;
+        line-height: 1.35;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-meta {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .hero-headline {
+        font-size: 2.75rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .intro-panel-inner {
+        max-width: 100%;
+        padding: 3rem 1.5rem;
+    }
+
+    .intro-panel-body {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 /* ── Intro Panel ── */
@@ -984,17 +1012,6 @@ h1 {
     animation: fadeInUp 0.8s ease-out 0.1s both;
 }
 
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(-48px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1013,14 +1030,6 @@ h1 {
     to {
         opacity: 1;
     }
-}
-
-.tagline {
-    font-size: 16rem;
-    color: #000;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    animation: slideright 0.8s ease-out 0.2s both;
 }
 
 .intro {
@@ -2187,19 +2196,6 @@ a.service-card-home:hover {
     color: var(--primary);
 }
 
-@media (max-width: 600px) {
-    .person-card {
-        flex-direction: column;
-        gap: 1.75rem;
-    }
-
-    .person-photo-slot,
-    .person-photo-placeholder,
-    .person-photo-slot img {
-        width: 120px;
-        height: 120px;
-    }
-}
 
 /* ── Blog Page Header ── */
 .page-header--with-substack {
@@ -2457,6 +2453,10 @@ footer {
         padding: 3rem 0 4rem;
     }
 
+    .container {
+        margin-top: 90px;
+    }
+
     .hero-image-wrap {
         width: 100%;
     }
@@ -2556,6 +2556,35 @@ footer {
 
     .page-header h1 {
         font-size: 2.5rem;
+    }
+
+    .service-card-illustration {
+        float: none;
+        width: 100%;
+        height: auto;
+        max-height: 220px;
+        margin: 0 0 1rem;
+    }
+
+    .page-header--with-image,
+    .page-header--with-substack {
+        flex-direction: column;
+    }
+
+    .page-header-image {
+        max-width: 100%;
+    }
+
+    .person-card {
+        flex-direction: column;
+        gap: 1.75rem;
+    }
+
+    .person-photo-slot,
+    .person-photo-placeholder,
+    .person-photo-slot img {
+        width: 140px;
+        height: 140px;
     }
 }
 

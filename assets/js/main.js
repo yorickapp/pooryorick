@@ -179,18 +179,37 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     });
 })();
 
-// Portfolio tab switcher
+// Tab switcher (portfolio page: .stab[data-tab] -> #id.portfolio-panel;
+// homepage services carousel: .stab[data-panel] -> .services-panel[data-panel])
 (function () {
-    var tabs = document.querySelectorAll('.portfolio-tab-nav .stab');
+    var tabs = document.querySelectorAll('.stab');
     if (!tabs.length) return;
+
     tabs.forEach(function (tab) {
         tab.addEventListener('click', function () {
-            var target = tab.getAttribute('data-tab');
-            tabs.forEach(function (t) { t.classList.remove('active'); });
-            document.querySelectorAll('.portfolio-panel').forEach(function (p) { p.classList.remove('active'); });
+            var group = tab.closest('.portfolio-tab-nav') ? 'portfolio' : 'services';
+            var groupTabs = group === 'portfolio'
+                ? document.querySelectorAll('.portfolio-tab-nav .stab')
+                : document.querySelectorAll('.services-tab-nav .stab');
+
+            groupTabs.forEach(function (t) {
+                t.classList.remove('active');
+                if (t.hasAttribute('aria-selected')) t.setAttribute('aria-selected', 'false');
+            });
             tab.classList.add('active');
-            var panel = document.getElementById(target);
-            if (panel) panel.classList.add('active');
+            if (tab.hasAttribute('aria-selected')) tab.setAttribute('aria-selected', 'true');
+
+            if (group === 'portfolio') {
+                var tabTarget = tab.getAttribute('data-tab');
+                document.querySelectorAll('.portfolio-panel').forEach(function (p) { p.classList.remove('active'); });
+                var panel = document.getElementById(tabTarget);
+                if (panel) panel.classList.add('active');
+            } else {
+                var idx = tab.getAttribute('data-panel');
+                document.querySelectorAll('.services-panel').forEach(function (p) { p.classList.remove('active'); });
+                var svcPanel = document.querySelector('.services-panel[data-panel="' + idx + '"]');
+                if (svcPanel) svcPanel.classList.add('active');
+            }
         });
     });
 })();
